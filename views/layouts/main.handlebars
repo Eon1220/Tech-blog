@@ -3,7 +3,7 @@
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>Tech Blog</title>
+    <title>Tech Spot</title>
     <link rel='stylesheet' href='/css/jass.css' />
     <link rel='stylesheet' href='/css/style.css' />
   </head>
@@ -12,17 +12,17 @@
     <div class='flex-column justify-space-around'>
       <header class='display-flex justify-space-between align-center p-2'>
         <h1>
-          <a href='/'>Tech Blog</a>
+          <a href='/'>Tech Spot</a>
         </h1>
         <nav>
           <ul>
             {{#if logged_in}}
               <li><a href='/'>Homepage</a></li>
-              <li><a href='/profile'>profile</a></li>
+              <li><a href='/profile'>Account</a></li>
               <li><a class='no-button' id='logout'>logout</a></li>
             {{else}}
               <li><a href='/login'>Homepage</a></li>
-              <li><a href='/login'>Profile</a></li>
+              <li><a href='/login'>Account</a></li>
               <li><a href='/login'>Login</a></li>
             {{/if}}
           </ul>
